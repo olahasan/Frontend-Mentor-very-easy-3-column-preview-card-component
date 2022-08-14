@@ -1,0 +1,99 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.big-box {
+    /* display: flex; */
+    margin: 150px auto;
+    border: 1px solid whitesmoke;
+    /* width: 657px; */
+    padding: 95px;
+    background-color: whitesmoke;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.big-box .box-1,
+.big-box .box-2,
+.big-box .box-3 {
+    /* flex-basis: 33.3%; */
+    padding: 50px;
+}
+
+.big-box .box-1 h2,
+.big-box .box-2 h2,
+.big-box .box-3 h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.big-box .box-1 p,
+.big-box .box-2 p,
+.big-box .box-3 p {
+    color: white;
+    font-size: 24px;
+    line-height: 1.8;
+    font-weight: normal;
+    width: 90%;
+    margin-bottom: 55px;
+}
+
+.big-box .box-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+
+.big-box .box-1 button,
+.big-box .box-2 button,
+.big-box .box-3 button{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.big-box .box-1 button {
+    color: orange;
+}
+.big-box .box-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.big-box .box-2 button {
+    color: hsl(184, 100%, 22%);
+}
+.big-box .box-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+.big-box .box-3 button {
+    color: hsl(179, 100%, 13%);   
+}
+
+
+ @media(max-width:767px) {
+    .big-box {
+     padding: 0;
+    }
+    .big-box .box-1 {
+        border-radius: 10px 0 0 10px;
+        -webkit-border-radius: 10px 10px 0 0px;
+    }
+    .big-box .box-3 {
+        border-radius: 0 10px 10px 0;
+        -webkit-border-radius: 0 0 10px 10px;
+    }
+ }
